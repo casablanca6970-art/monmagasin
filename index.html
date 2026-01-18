@@ -2,23 +2,26 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>TWINS MODE</title> <!-- NOM DU MAGASIN -->
+  <title>Casa Style</title> <!-- Nom de ton magasin -->
   <link rel="stylesheet" href="style.css">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
 </head>
 <body>
 
 <header>
-  <h1>👕 TWINS MODE</h1> <!-- NOM DU MAGASIN -->
-  <p>Votre magasin d’habits en ligne</p>
+  <img src="logo.png" alt="Logo du magasin" width="150">
+  <h1>Casa Style</h1>
 </header>
 
-<div class="produit">
-  <img src="tshirt.jpg">
-  <h3>T-shirt Noir</h3>
-  <p>Prix : 120 DH</p>
-  <button onclick="commander('T-shirt Noir')">Commander</button>
-</div>
+<h2>Nos Produits</h2>
+<div id="produits"></div>
 
+<h2>Panier</h2>
+<div id="panier"></div>
+
+<!-- Script -->
 <script src="script.js"></script>
 </body>
 </html>
